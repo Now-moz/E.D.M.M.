@@ -21,34 +21,20 @@
         }        
         .container {
             position:absolute;
-            top: 40%;
+            top: 30%;
             left: 20%;
             transform: translate(-10%, -20%);
             display: inline-block;
         }
         .title {
-            font-size: 4rem;
-            font-weight: bold;
+            font-size: 120px;
+            font-weight:500;
             margin: 0;
         }
         .subtitle{
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
+            font-size: 12px;
+            margin-top:-4%;
             font-weight: normal;
-        }
-       hr{
-        height: 200vh;
-        width: 50%;
-       }
-       .text-under-line {
-            margin-top: 102vh;
-            font-size: 1.2rem;
-            text-align: start;
-        }
-        .line-container {
-            display: flex;
-            flex-direction: column;
-            margin: 10vh;
         }
         /* Modal Styles */
         .modal {
@@ -62,8 +48,8 @@
             background-color: rgba(74, 6, 56, 0.5); /* Black background with opacity */
         }
         .modal-content {
-            background-color: #fff;
-            color: #000;
+            background-color: #7C9C70;
+            color: #F4F5D3;
             margin: 15% auto;
             padding: 20px;
             border-radius: 10px;
@@ -80,23 +66,26 @@
         }
         .close:hover,
         .close:focus {
-            color: #000;
+            color: rgb(74, 6, 56);
             text-decoration: none;
             cursor: pointer;
         }
-
-    
+        hr {
+            width: 90%; /* Specify the width of the line */
+            margin: 0 auto; /* Centers the line horizontally */
+            border: none; /* Remove default border */
+            height: 2px; /* Thickness of the line */
+            background-color: #F4F5D3; /* Color of the line */
+            margin-top: 50%;
+        }
     </style>
+
 </head>
 <body>
+
     <div class="container">
     <h1 class="title"> E.D.M.M.</h1>
     <p class="subtitle">The Website</p>
-    </div>
-    <div class="line-container">
-    <div class= line"></div>
-    <p class="text-under-line">In loading</p>
-    <hr>
     </div>
        <!-- Modal Pop-up -->
     <div id="myModal" class="modal">
@@ -114,7 +103,7 @@
         var span = document.getElementsByClassName("close")[0];
 
         // Show the modal when the page loads
-        window.onload = function() {
+        window.onloa = function() {
             modal.style.display = "block";
         }
 
@@ -130,5 +119,6 @@
             }
         }
     </script>
+<hr>
 </body>
 </html>
