@@ -12,7 +12,7 @@
         body{
             margin: 0;
             padding: 0;
-            background-color: #003300;
+            background-color: #03420C;
             color: #F4F5D3;
             display: flex;
             height: 130vh;
@@ -25,7 +25,7 @@
             left: 20%;
             transform: translate(-10%, -20%);
             display: inline-block;
-            text-align:start
+            text-align:left
         }
         .title {
             font-size: 700%;
@@ -78,6 +78,21 @@
             height: 2px; /* Thickness of the line */
             background-color: #F4F5D3; /* Color of the line */
             margin-top: 50%;
+        }
+                /* Media Query for iPhone Screens (portrait mode) */
+                @media screen and (max-width: 480px) {
+            body {
+                background-color: #3F6F3E; /* Darker green for mobile view */
+                padding: 10px; /* Less padding on smaller screens */
+            }
+
+            .line {
+                width: 70%; /* Make the line longer on mobile screens */
+            }
+
+            .text-under-line {
+                font-size: 1rem; /* Smaller font size for mobile */
+            }
         }
     </style>
 
