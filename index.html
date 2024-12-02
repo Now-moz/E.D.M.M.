@@ -17,6 +17,27 @@
     color: #F4F5D3;
     font-family: "Tenor Sans", sans-serif
         }
+        /* Media Query for iPhone Screens (portrait mode) */
+        @media screen and  (max-width: 480px) {
+            body {
+                background-color: #03420E; /* Darker green for mobile view */
+                padding: 0; /* Less padding on smaller screens */
+            }
+            .container{
+                font-size: 50%;
+            }
+            .tabs {
+                flex-direction: column;
+                gap: 2px;
+                justify-content: space-between;
+            }
+            .section.two{
+                flex-direction: column;
+            }
+            .tab-content{
+                padding-top: 80px;
+            }
+        }
         .section{
             flex: 1;
         }
@@ -39,7 +60,7 @@
         }
         .subtitle{
             font-size: 70%;
-            margin-top: -20px;
+            margin-top: -10px;
             font-weight: normal;
             margin-left: 14px;
         }
@@ -101,10 +122,11 @@
             background-color: #B8C8A1;
         }
         .tab-content {
-            position: absolute;
+            padding-top: 70px;
+            padding-left: 30px;
+            padding-right: 30px;
             background-color: #7C9C70;
             display: none;
-            padding: 20px;
             border: none;
             margin-left: 10%;
             margin-right: 10%;
@@ -179,13 +201,9 @@
         </div>
         <div id="editorials" class="tab-content">
             <h2 class="tab-title">[Ed]itorials</h2>
-            <p>As a wanderer, I watch a world that moves too fast. To be able to slow it down, to observe from the outside, is something not known by many. Life is filed with small moments, overlooked details and a fuck ton of irony. They deserve to be shared, unfiltered and honest.
-                As an attempt to re-bind a disconnected world, I write these editorials from a unique perspective shaped by wandering without purpose, observing without judgment.
-                I don't offer solutions nor do I pretend to know the answers. However, I do invite you to create your own understanding. The goal isn't a conclusion, but to spark introspection into the irony and the absurdity, the melancholy and joy, the ugly and the beauty. And perhaps most importantly, the raw, unfiltered truth of everyday life.</p>
-            <button onclick="toggleDropdown('aboutDropdown')">More Info</button>
-            <div id="aboutDropdown" class="dropdown-content">
-                <p>This is additional information for the About tab.</p>
-            </div>
+            <p>As a wanderer, I watch a world that moves too fast. To be able to slow it down, to observe from the outside, is something not known by many. Life is filed with small moments, overlooked details and a fuck ton of irony. They deserve to be shared, unfiltered and honest.</p>
+            <p>As an attempt to re-bind a disconnected world, I write these editorials from a unique perspective shaped by wandering without purpose, observing without judgment.</p>
+            <p>I don't offer solutions nor do I pretend to know the answers. However, I do invite you to create your own understanding. The goal isn't a conclusion, but to spark introspection into the irony and the absurdity, the melancholy and joy, the ugly and the beauty. And perhaps most importantly, the raw, unfiltered truth of everyday life.</p>
         </div>
     </div>
         <script>
