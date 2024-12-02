@@ -193,11 +193,23 @@
             text-decoration: none;
             cursor: pointer;
         }
-        .swiper-button-nex{
-            margin-top: 700px;
+               /* Navigation Buttons */
+               .swiper-button-next,
+        .swiper-button-prev {
+            color: #03420E; /* Color of the buttons */
+            position: relative;
+            top: 1600px;
+            transform: translateY(-50%);
+            z-index: 10; /* Bring buttons to the front */
+            cursor: pointer;
         }
-        swiper-button-prev{
-            margin-top: 800px;
+
+        .swiper-button-next {
+            right: 10px; /* Position next button to the right */
+        }
+
+        .swiper-button-prev {
+            left: 10px; /* Position prev button to the left */
         }
 </style>
 </head>
@@ -276,29 +288,29 @@
                 }
             }
         </script> 
-        <script>('DOMContentLoaded', () => {
-    const swiper = new Swiper('.swiper-container', {
-        slidesPerVeiw: 1,
-        spacebetween: 0,
-        loop: true, // Looping enabled
-        direction: "horizontal", // Use horizontal sliding by default
-        autoplay: {
-            delay: 5000, // Change every 5 seconds
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination', // Pagination dots
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next', // Next button
-            prevEl: '.swiper-button-prev', // Previous button
-        },
-        scrollbar: {
-            el: ".swiper-scrollbar"
-        },
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Show one slide at a time
+            spaceBetween: 0, // No extra space between slides
+            loop: true, // Enable looping
+            autoplay: {
+                delay: 5000, // Slide every 5 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination', // Pagination dots
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Next button
+                prevEl: '.swiper-button-prev', // Previous button
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar"
+            },
+        });
     });
-});
 </script>
 <div id="myModal" class="modal">
     <div class="modal-content">
@@ -334,3 +346,4 @@
 </script>
 </body>
 </html>
+
