@@ -18,7 +18,7 @@
     font-family: "Tenor Sans", sans-serif
         }
         /* Media Query for iPhone Screens (portrait mode) */
-        @media screen and  (max-width: 480px) {
+        @media screen and  (max-width: 720px) {
             body {
                 background-color: #03420E; /* Darker green for mobile view */
                 padding: 0; /* Less padding on smaller screens */
@@ -47,8 +47,8 @@
         }
         .container {
             position:absolute;
-            top: 20%;
-            left: 10%;
+            top: 30%;
+            left: 15%;
             transform: translate(-10%, -20%);
             display: inline-block;
             text-align:left
@@ -78,18 +78,17 @@
         .copyright-text{
             flex: 1;
             margin: 40px;
-            margin-right: 5%;
             text-align:justify;
         }
         .acknowledgement{
             flex: 1;
             margin: 40px;
-            margin-left: 5%;
             text-align: justify;
         }
         .section.three{
             background: #B8C8A1;
-            min-height: 1000px;
+            min-height: 10px;
+            padding-bottom: 5%;
         }
         .tabs {
             width: 80%;
@@ -142,6 +141,7 @@
             height: auto; /* Specify a height that works well for your layout */
             margin: auto;
             overflow: hidden;
+            position: relative;
         }
         .swiper-wrapper {
             display: flex; /* Use flex to keep slides aligned properly */
@@ -151,15 +151,19 @@
             width: 100%; /* Full width */
             display: flex; /* Centering images inside slide */
             justify-content: center;
+            height: 100%;
             align-items: center;
             box-sizing: border-box; /* Prevent overflow */
         }
         .swiper-slide img {
-            width: 100%; /* Make images responsive within the slide */
+            max-width: 100%;
+            width: auto; /* Make images responsive within the slide */
             height: auto;
-            max-height: 100%; /* Keep images contained within slide height */
-            object-fit: cover; /* Ensure images fit well */}
-                    /* Modal Styles */
+            max-height: 100%; /* Keep images contained within slide height */ /* Ensure images fit well */
+            object-fit: contain;
+        }
+        
+            /* Modal Styles */
         .modal {
             display: none; /* Hidden by default */
             position: fixed; 
@@ -168,7 +172,7 @@
             top: 0;
             width: 100%; 
             height: 100%; 
-            background-color: rgba(74, 6, 56, 0.5); /* Black background with opacity */
+            background-color: #4a063880; /* Black background with opacity */
         }
         .modal-content {
             background-color: #7C9C70;
@@ -181,7 +185,7 @@
             text-align: center;
         }
         .close {
-            color: #aaa;
+            color: #03420E;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -189,28 +193,11 @@
         }
         .close:hover,
         .close:focus {
-            color: rgb(74, 6, 56);
+            color: #4a0638;
             text-decoration: none;
             cursor: pointer;
         }
-               /* Navigation Buttons */
-               .swiper-button-next,
-        .swiper-button-prev {
-            color: #03420E; /* Color of the buttons */
-            position: relative;
-            top: 1600px;
-            transform: translateY(-50%);
-            z-index: 10; /* Bring buttons to the front */
-            cursor: pointer;
-        }
-
-        .swiper-button-next {
-            right: 10px; /* Position next button to the right */
-        }
-
-        .swiper-button-prev {
-            left: 10px; /* Position prev button to the left */
-        }
+        
 </style>
 </head>
 <body>
@@ -239,19 +226,45 @@
                         <img src="E.D.M.M./Blue1.JPG" alt="Blue1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="E.D.M.M./BillsBuffalo4.JPG" alt="Image 2">
+                        <img src="E.D.M.M./BillsBuffalo1.JPG" alt="BillsBuffalo1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="E.D.M.M./Flex.jpg" alt="Image 3">
+                        <img src="E.D.M.M./Flex.jpg" alt="Flex">
                     </div>
                     <div class="swiper-slide">
-                        <img src="E.D.M.M./Statesman.jpg" alt="Image 4">
+                        <img src="E.D.M.M./Statesman.jpg" alt="Statesman">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./BillsDaihatsu.jpg" alt="BillsDaihatsu">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./Paddington1.JPG" alt="Paddington1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./Carters1.JPG" alt="Carters1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./Break1.JPG" alt="Break1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./BillsGeese2.JPG" alt="BillsGeese2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./Rose.JPG" alt="Rose">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./BushWalk1.jpg" alt="BushWalk1">
+                    </div>
+                     <div class="swiper-slide">
+                         <img src="E.D.M.M./TilbaTrinkets.JPG" alt="TilbaTrinkets">
+                     </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./BillsBuffalo5.JPG" alt="BillsBuffalo5">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="E.D.M.M./Break4.JPG" alt="Break4">
                     </div>
                 </div>
-                <!-- Pagination and Navigation -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
         <div id="editorials" class="tab-content">
@@ -259,6 +272,14 @@
             <p>As a wanderer, I watch a world that moves too fast. To be able to slow it down, to observe from the outside, is something not known by many. Life is filed with small moments, overlooked details and a fuck ton of irony. They deserve to be shared, unfiltered and honest.</p>
             <p>As an attempt to re-bind a disconnected world, I write these editorials from a unique perspective shaped by wandering without purpose, observing without judgment.</p>
             <p>I don't offer solutions nor do I pretend to know the answers. However, I do invite you to create your own understanding. The goal isn't a conclusion, but to spark introspection into the irony and the absurdity, the melancholy and joy, the ugly and the beauty. And perhaps most importantly, the raw, unfiltered truth of everyday life.</p>
+        </div>
+        <div id="Projects" class="tab-content">
+            <h2 class="tab-title">Projects</h2>
+            <p>The projects section is a space where ideas come to life. Here, you'll find an eclectic mix of creative endeavors, from screenplays to albums. Each project is a reflection of curiosity, exploration, and the pursuit of understanding the world in all its messy, beautiful complexity.</p>
+        </div>
+        <div id="Opinion" class="tab-content">
+            <h2 class="tab-title">Opinions</h2>
+            <p>I speak my mind on the world as I see it. From societal quirks to cultural debates, these pieces are a mix of raw observations and unapologetic thoughts. They’re personal, sometimes provocative, and always honest. My goal is to spark conversation, challenge perspectives, and invite readers to think deeply</p>
         </div>
     </div>
         <script>
@@ -328,7 +349,7 @@
     var span = document.getElementsByClassName("close")[0];
 
     // Show the modal when the page loads
-    window.onload = function() {
+    window.onloa = function() {
         modal.style.display = "block";
     }
 
@@ -346,4 +367,3 @@
 </script>
 </body>
 </html>
-
