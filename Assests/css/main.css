@@ -26,7 +26,6 @@ body, html {
             }
         #sectiontwo{
             flex-direction: column;
-            padding: 10px;
             text-align: center;
             }
         .tab-content{
@@ -62,7 +61,6 @@ body, html {
             }
         #sectiontwo{
             flex-direction: column;
-            padding: 10px;
             text-align: center;
             }
         .tab-content{
