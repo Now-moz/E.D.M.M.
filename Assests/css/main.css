@@ -91,16 +91,16 @@ body, html {
         transform: translate(-10%, -20%);
         display: inline-block;
         text-align:left}
-    #container .title{
-        font-size: 700%;
-        font-weight: normal;
-        margin: 1px;}
-    #container .subtitle{
-        font-size: 70%;
-        margin-top: -10px;
-        font-weight: normal;
-        margin-left: 14px;
-        }
+        #container .title{
+            font-size: 700%;
+            font-weight: normal;
+            margin: 1px;}
+        #container .subtitle{
+            font-size: 70%;
+            margin-top: -10px;
+            font-weight: normal;
+            margin-left: 14px;
+            }
     #sectiontwo {
         background-color: #F4F5D3;
         color: #03420E;
@@ -111,17 +111,15 @@ body, html {
         display: flex;
         justify-content: space-between;
         line-height: 2;
-        max-height: auto;
-        }
+        max-height: auto;}
         #sectiontwo .copyright-text{
-        flex: 1;
-        margin: 40px;
-        text-align:justify;
-        }
+            flex: 1;
+            margin: 40px;
+            text-align:justify;}
         #sectiontwo .acknowledgement{
-        flex: 1;
-        margin: 40px;
-        text-align: justify;
+            flex: 1;
+            margin: 40px;
+            text-align: justify;
         }
     #sectionthree{
         background: #B8C8A1;
@@ -131,78 +129,67 @@ body, html {
         padding-top: 5%;
         }
         #sectionthree .tabs {
-        width: 80%;
-        border: none;
-        justify-content: space-around;
-        display:flex;
-        height: 40px;
-        margin-left: 10%;
-        margin-right: 10%;
-         }
+            width: 80%;
+            border: none;
+            justify-content: space-around;
+            display:flex;
+            height: 40px;
+            margin-left: 10%;
+            margin-right: 10%;}
         #sectionthree .tab-link {
-        background-color: #7C9C70;
-        color: #03420E;
-        padding-inline: 10%;
-        border: none;
-        cursor: pointer;
-        flex: 1;
-        text-align: center;
-        transition: background-color 0.3s;
-        padding: 10px 20px;
-         }
+            background-color: #7C9C70;
+            color: #03420E;
+            padding-inline: 10%;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: background-color 0.3s;
+            padding: 10px 20px;}
         #sectionthree .tab-link:last-child {
-        margin-right: 0%; /* Remove margin for the last tab */
-        }
+            margin-right: 0%; /* Remove margin for the last tab */}
         #sectionthree .tab-link:hover {
-        background-color: #F4F5D3;
-        }
+            background-color: #F4F5D3;}
         #sectionthree .tab-link.active {
-        background-color: #B8C8A1;
-        }
+            background-color: #B8C8A1;}
         #sectionthree .tab-content {
-        padding-top: 70px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #7C9C70;
-        display: none;
-        border: none;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: justify;
-        line-height: 2;
-        }
+            padding-top: 70px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #7C9C70;
+            display: none;
+            border: none;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: justify;
+            line-height: 2;}
         #sectionthree .tab-title{
-        font-size: 250%;
-        font-weight: 100;
-        }
+            font-size: 250%;
+            font-weight: 100;}
         #sectionthree .swiper-container {
-        width: 100%;
-        max-width: 800px;
-        height: 500px; /* Specify a height that works well for your layout */
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        }
+            width: 100%;
+            max-width: 800px;
+            height: 500px; /* Specify a height that works well for your layout */
+            margin: auto;
+            overflow: hidden;
+            position: relative;}
         #sectionthree .swiper-wrapper {
-        display: flex; /* Use flex to keep slides aligned properly */
-        transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
-        }
+            display: flex; /* Use flex to keep slides aligned properly */
+            transition: transform 0.5s ease-in-out; /* Smooth sliding effect */}
         #sectionthree .swiper-slide{
-        width: 100%; /* Full width */
-        display: flex; /* Centering images inside slide */
-        justify-content: center;
-        height: 100%;
-        align-items: center;
-        box-sizing: border-box; /* Prevent overflow */
-        }
+            width: 100%; /* Full width */
+            display: flex; /* Centering images inside slide */
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+            box-sizing: border-box; /* Prevent overflow */}
         #sectionthree .swiper-slide img {
-        max-width: 100%;
-        width: 100%; /* Make images responsive within the slide */
-        height: auto;
-        max-height: 100%; /* Keep images contained within slide height */ /* Ensure images fit well */
-        object-fit: contain;
-        }
+            max-width: 100%;
+            width: 100%; /* Make images responsive within the slide */
+            height: auto;
+           max-height: 100%; /* Keep images contained within slide height */ /* Ensure images fit well */
+            object-fit: contain;}
          /* Modal Styles */
     .modal {
         display: none; /* Hidden by default */
@@ -237,4 +224,30 @@ body, html {
          text-decoration: none;
         cursor: pointer;
         }
-        
+    #sectionfour{
+        min-height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #F4F5D3;
+        flex-direction: column;
+        text-align: center;}
+        #sectionfour .Contact-title{
+            color: #03420E;
+            font-weight: 150;}
+       #sectionfour .Contact-text{
+        color: #03420E;}
+        #sectionfour .social-media-bar {
+            display: flex;
+            justify-content: center; /* Center the bar horizontally */
+            align-items: center; /* Vertically align items */
+            gap: 20px; /* Spacing between icons */
+            padding: 10px 20px;
+            border-radius: 5px;}
+        #sectionfour .social-media-bar a {
+            text-decoration: none; /* Remove underline */
+            color: #03420E; /* Icon color */
+            font-size: 30px; /* Icon size */
+            transition: color 0.3s, transform 0.3s;}
+        #sectionfour .social-media-bar a:hover {
+            color: #B8C8A1; /* Change color on hover */
+            transform: scale(1.2); /* Slight zoom on hover */}
