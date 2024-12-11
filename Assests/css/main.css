@@ -251,3 +251,200 @@ body, html {
         #sectionfour .social-media-bar a:hover {
             color: #B8C8A1; /* Change color on hover */
             transform: scale(1.2); /* Slight zoom on hover */}
+    /* Header */
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #03420E;
+    color: #B8C8A1;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    right: 0;
+}
+#header {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 23em;
+    z-index: 10002;
+    transform: translateX(23em);
+    right: 0;
+}
+    #header h1 {
+        color: #F4F5D3;
+    }
+        #header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
+            color: #F4F5D3;
+            text-decoration: none;
+            color: inherit;
+        }
+    #header header p {
+        color: #03420E;
+    }
+    #header a {
+        color: #7c9c70;
+    }
+        #header a:hover {
+            color: #7c9c70 !important;
+        }
+        #header > header .avatar {
+            display: block;
+            margin: 0 auto 2.25em auto;
+            width: 8em;
+        }
+        #header > header {
+            flex-shrink: 0;
+            padding: 3em;
+        }
+        #header > header h1 {
+            font-size: 1.75em;
+            margin: 0;
+            text-decoration: none;
+        }
+        #header > header p {
+            color: #7c9c70;
+            font-style: italic;
+            margin: 1em 0 0 0;
+        }
+    #header > footer {
+        flex-shrink: 0;
+        bottom: 0 auto;
+        width: 100%;
+        bottom: auto;
+        left: auto;
+        margin: 3em 0 0 0;
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+        #header > footer .icons {
+            display: flex;
+            justify-content: center; /* Center the bar horizontally */
+            align-items: center; /* Vertically align items */
+            gap: 35px; /* Spacing between icons */
+        }
+            #header > footer .icons a {
+                text-decoration: none; /* Remove underline */
+                color: #B8C8A1; /* Icon color */
+                font-size: 30px; /* Icon size */
+                transition: color 0.3s, transform 0.3s;
+            }
+            #header > footer .icons a:hover{
+                color: #7c9c70; /* Change color on hover */
+                transform: scale(1.2); /* Slight zoom on hover */
+            }
+    #header > nav {
+        flex-grow: 1;
+    }
+        #header > nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+            #header > nav ul li {
+                display: block;
+                padding: 0;
+            }
+                #header > nav ul li a {
+                    transition: none;
+                    border: 0;
+                    color: #F4F5D3 !important;
+                    display: block;
+                    padding: 1em 0;
+                    text-decoration: none;
+                    font-size: 115%;
+                }
+                    #header > nav ul li a.active {
+                        background: #7c9c70;
+                        color: #03420E !important;
+                    }
+                #header > nav ul li:first-child {
+                    border-top: 0;
+                }
+#titleBar {
+    display: none;
+}
+    /* Header Panel */
+        #titleBar {
+            backface-visibility: hidden;
+            transition: transform 0.5s ease;
+            display: block;
+            height: 44px;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10001;
+            background: #03420E;
+            color: #F4F5D3;
+            min-width: 320px;
+        }
+            #titleBar .title {
+                color: #F4F5D3;
+                display: block;
+                font-weight: 700;
+                height: 44px;
+                line-height: 44px;
+                padding: 0 1em;
+                width: 100%;
+                text-align: left;
+                text-decoration: none;
+                color: inherit;
+            }
+                #titleBar .title a {
+                    border: 0;
+                    text-decoration: none;
+                    color: inherit;
+                }
+            #titleBar .toggle {
+                text-decoration: none;
+                height: 4em;
+                position: absolute;
+                top: 0;
+                width: 6em;
+                border: 0;
+                outline: 0;
+                right: 0;
+            }
+                #titleBar .toggle:before {
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 1;
+                    text-transform: none !important;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                }
+                #titleBar .toggle:before {
+                    background: #03420E;
+                    color: #F4F5D3;
+                    content: '\f0c9';
+                    display: block;
+                    font-size: 150%;
+                    height: 44px;
+                    line-height: 44px;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    width: 64px;
+                    right: 0;
+                }
+        body.header-visible #wrapper, body.header-visible #titleBar {
+            transform: translateX(-23em);
+        }
+        body.header-visible #header {
+            transform: translateX(0);
+        }
+@media screen and (max-width: 760px){
+}
+@media screen and (max-width: 480px){
+}
