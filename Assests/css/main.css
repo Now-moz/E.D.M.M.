@@ -7,8 +7,7 @@ body, html {
     color: #F4F5D3;
     font-family: "Tenor Sans", sans-serif
     }
-     /* Media Query for iPhone Screens (portrait mode) */
-    @media screen and  (max-width: 720px) {
+    @media screen and  (max-width: 480px){
         body {
             background-color: #03420E; /* Darker green for mobile view */
             padding: 0; /* Less padding on smaller screens */
@@ -43,7 +42,7 @@ body, html {
             object-fit: cover; /* Ensure the image is covered and fits well */
             }
     }
-    @media screen and  (max-width: 480px){
+    @media screen and  (max-width: 760px){
         body {
             background-color: #03420E; /* Darker green for mobile view */
             padding: 0; /* Less padding on smaller screens */
@@ -86,7 +85,7 @@ body, html {
         min-height: 700px;
         }
     #container{
-        position:absolute;
+        position: absolute;
         top: 30%;
         left: 15%;
         transform: translate(-10%, -20%);
@@ -112,22 +111,23 @@ body, html {
         display: flex;
         justify-content: space-between;
         line-height: 2;
+        max-height: auto;
         }
-    #sectiontwo .copyright-text{
+        #sectiontwo .copyright-text{
         flex: 1;
         margin: 40px;
         text-align:justify;
         }
-    #sectiontwo .acknowledgement{
+        #sectiontwo .acknowledgement{
         flex: 1;
         margin: 40px;
         text-align: justify;
         }
-    .section.three{
+    #sectionthree{
         background: #B8C8A1;
         padding-bottom: 5%;
         }
-    .tabs {
+        #sectionthree .tabs {
         width: 80%;
         border: none;
         justify-content: space-around;
@@ -136,7 +136,7 @@ body, html {
         margin-left: 10%;
         margin-right: 10%;
          }
-    .tab-link {
+        #sectionthree .tab-link {
         background-color: #7C9C70;
         color: #03420E;
         padding-inline: 10%;
@@ -147,16 +147,16 @@ body, html {
         transition: background-color 0.3s;
         padding: 10px 20px;
          }
-    .tab-link:last-child {
+        #sectionthree .tab-link:last-child {
         margin-right: 0%; /* Remove margin for the last tab */
         }
-    .tab-link:hover {
+        #sectionthree .tab-link:hover {
         background-color: #F4F5D3;
         }
-    .tab-link.active {
+        #sectionthree .tab-link.active {
         background-color: #B8C8A1;
         }
-    .tab-content {
+        #sectionthree .tab-content {
         padding-top: 70px;
         padding-bottom: 30px;
         padding-left: 30px;
@@ -169,11 +169,11 @@ body, html {
         text-align: justify;
         line-height: 2;
         }
-    .tab-title{
+        #sectionthree .tab-title{
         font-size: 250%;
         font-weight: 100;
         }
-    .swiper-container {
+        #sectionthree .swiper-container {
         width: 100%;
         max-width: 800px;
         height: 500px; /* Specify a height that works well for your layout */
@@ -181,11 +181,11 @@ body, html {
         overflow: hidden;
         position: relative;
         }
-    .swiper-wrapper {
+        #sectionthree .swiper-wrapper {
         display: flex; /* Use flex to keep slides aligned properly */
         transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
         }
-    .swiper-slide{
+        #sectionthree .swiper-slide{
         width: 100%; /* Full width */
         display: flex; /* Centering images inside slide */
         justify-content: center;
@@ -193,14 +193,14 @@ body, html {
         align-items: center;
         box-sizing: border-box; /* Prevent overflow */
         }
-    .swiper-slide img {
+        #sectionthree .swiper-slide img {
         max-width: 100%;
         width: 100%; /* Make images responsive within the slide */
         height: auto;
         max-height: 100%; /* Keep images contained within slide height */ /* Ensure images fit well */
         object-fit: contain;
         }
-            /* Modal Styles */
+         /* Modal Styles */
     .modal {
         display: none; /* Hidden by default */
         position: fixed; 
