@@ -166,7 +166,14 @@ body, html {
             line-height: 2;}
         #sectionthree .tab-title{
             font-size: 250%;
-            font-weight: 100;}
+            font-weight: 100;
+            text-decoration: none;
+            color: inherit;
+        }
+        #sectionthree .tab-title:hover{
+            color: #03420E;
+            text-decoration: underline;
+        }
         #sectionthree .swiper-container {
             width: 100%;
             max-width: 800px;
@@ -235,7 +242,8 @@ body, html {
             color: #03420E;
             font-weight: 150;}
        #sectionfour .Contact-text{
-        color: #03420E;}
+            color: #03420E;
+            padding: 5%;}
         #sectionfour .social-media-bar {
             display: flex;
             justify-content: center; /* Center the bar horizontally */
