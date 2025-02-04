@@ -12,21 +12,27 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!--header-->
-        <section id="header">
+    <header>
+        <button class="hamburger" aria-label="Toggle menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav class="menu">
             <header>
-                <h1 id="logo"><a href="/E.D.M.M/Index.html">E.D.M.M.</a></h1>
+                <h1><a href="/Index.html">E.D.M.M.</a></h1>
                 <p>We Don't Need No<br>
                 Thought Control</p>
             </header>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#one">Gallery</a></li>
-                    <li><a href="/E.D.M.M/[Ed]itorial.html" class="active">[Ed]itorials</a></li>
-                    <li><a href="#three">Projects</a></li>
-                    <li><a href="#four">Opinions</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <hr>
+                <li><a href="#">Gallery</a></li>
+                <hr>
+                <li><a href="#">[Ed]itorials</a></li>
+                <hr>
+                <li><a href="#">Projects</a></li>
+                <hr>
+            </ul>
             <footer>
                 <div class="icons">
                         <a href="https://soundcloud.com/user-173252481" target="_blank" aria-label="SoundCloud">
@@ -40,39 +46,32 @@
                         </a>
                 </div>
             </footer>
-        </section>
-        <div id="titleBar">
-            <a href="#header" class="toggle"></a>
-            <span class="title">
-                <a href="/E.D.M.M/">E.D.M.M.</a>
-            </span>
-        </div>
-    <div class="section one">
+        </nav>
+    </header>
+    <section class="one">
         <div id="container">
-            <h1 class="title"> E.D.M.M.</h1>
-            <p class="subtitle">The Website</p>
+            <h1>E.D.M.M.</h1>
+            <p>The Website</p>
         </div>
-    </div>
-    <div id="sectiontwo">
+    </section>
+    <section class="two">
         <p class="acknowledgement">All work is currently produced on Dharawal land. I will also pay respect to the Wiradijuri, Eora and Yuin Nations and their elders past, present and future. It is important to honor their ongoing connection to this land, water, and community. This connection is admirable, escpecially in a time where, as a society, we couldn't be anymore disconnected</p>
         <p class="copyright-text">This is a Collection of Artistic expression curated by EdMax Morrison. <br>All content published on this website, including text, images, and other materials, is created by me, therefore permission before usage is required.<br>Feel free to get into contact for inquires</p>
-    </div>
-    <div id="sectionthree">
+    </section>
+    <section class="three"">
         <div class="tabs">
             <button class="tab-link active" onclick="openTab(event, 'Gallery')">Gallery</button>
             <button class="tab-link" onclick="openTab(event, 'editorials')">[Ed]itordials</button>
-            <button class="tab-link" onclick="openTab(event, 'Projects')">Projects</button>
-            <button class="tab-link" onclick="openTab(event, 'Opinion')">Opinion</button>
         </div>
         <div id="Gallery" class="tab-content" style="display: block;">
-            <h2 class="tab-title">Gallery</h2>
+            <a class="tab-title">Gallery</a>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="Images/Blue1.JPG" alt="Blue1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Images/BillsBuffalo1.jpg" alt="BillsBuffalo1">
+                        <img src="Images/BillsBuffalo1.JPG" alt="BillsBuffalo1">
                     </div>
                     <div class="swiper-slide">
                         <img src="Images/Flex.jpg" alt="Flex">
@@ -87,13 +86,13 @@
                         <img src="Images/Paddington1.JPG" alt="Paddington1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Images/Carters1.jpg" alt="Carters1">
+                        <img src="Images/Carters1.JPG" alt="Carters1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Images/Break1.jpg" alt="Break1">
+                        <img src="Images/Break1.JPG" alt="Break1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Images/BillsGeese2.jpg" alt="BillsGeese2">
+                        <img src="Images/BillsGeese2.JPG" alt="BillsGeese2">
                     </div>
                     <div class="swiper-slide">
                         <img src="Images/Rose.JPG" alt="Rose">
@@ -105,33 +104,33 @@
                          <img src="Images/TilbaTrinkets.JPG" alt="TilbaTrinkets">
                      </div>
                     <div class="swiper-slide">
-                        <img src="Images/BillsBuffalo5.jpg" alt="BillsBuffalo5">
+                        <img src="Images/BillsBuffalo5.JPG" alt="BillsBuffalo5">
                     </div>
                     <div class="swiper-slide">
-                        <img src="Images/Break4.jpg" alt="Break4">
+                        <img src="Images/Break4.JPG" alt="Break4">
                     </div>
                 </div>
             </div>
         </div>
         <div id="editorials" class="tab-content">
-            <h2 class="tab-title">[Ed]itorials</h2>
+            <a class="tab-title" href="/E.D.M.M/[Ed]itorial.html">[Ed]itorials</a>
             <p>As a wanderer, I watch a world that moves too fast. To be able to slow it down, to observe from the outside, is something not known by many. Life is filed with small moments, overlooked details and a fuck ton of irony. They deserve to be shared, unfiltered and honest.</p>
             <p>As an attempt to re-bind a disconnected world, I write these editorials from a unique perspective shaped by wandering without purpose, observing without judgment.</p>
             <p>I don't offer solutions nor do I pretend to know the answers. However, I do invite you to create your own understanding. The goal isn't a conclusion, but to spark introspection into the irony and the absurdity, the melancholy and joy, the ugly and the beauty. And perhaps most importantly, the raw, unfiltered truth of everyday life.</p>
         </div>
         <div id="Projects" class="tab-content">
-            <h2 class="tab-title">Projects</h2>
+            <a class="tab-title">Projects</a>
             <p>The projects section is a space where ideas come to life. Here, you'll find an eclectic mix of creative endeavors, from screenplays to albums. Each project is a reflection of curiosity, exploration, and the pursuit of understanding the world in all its messy, beautiful complexity.</p>
         </div>
         <div id="Opinion" class="tab-content">
-            <h2 class="tab-title">Opinions</h2>
+            <a class="tab-title">Opinions</a>
             <p>I speak my mind on the world as I see it. From societal quirks to cultural debates, these pieces are a mix of raw observations and unapologetic thoughts. They’re personal, sometimes provocative, and always honest. My goal is to spark conversation, challenge perspectives, and invite readers to think deeply</p>
         </div>
-    </div>
-        <div id="sectionfour">
-        <h1 class="Contact-title">Contact me</h1>
-        <p class="Contact-text">Based in Wollongong, feel free to contact me through email or on instagram</p>
-        <p class="Contact-text">ed_morrison03@outlook.com</p>
+    </section>
+    <section class="four">
+        <h1>Contact me</h1>
+        <p>Based in Wollongong, feel free to contact me through email or on instagram</p>
+        <p>ed_morrison03@outlook.com</p>
         <div class="social-media-bar">
             <a href="https://soundcloud.com/user-173252481" target="_blank" aria-label="SoundCloud">
                 <i class="fab fa-soundcloud"></i>
@@ -143,7 +142,7 @@
                 <i class="fab fa-spotify"></i>
             </a>
         </div>
-    </div>
+    </section>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -153,14 +152,7 @@
     </div>
     <script src="Assests/JS/Tabswitching.js"></script> 
     <script src="Assests/JS/Swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="Assests/JS/Modal.js"></script>
-    <script src="Assests/JS/editorials/jquery.min.js"></script>
-    <script src="Assests/JS/editorials/jquery.scrollex.min.js"></script>
-    <script src="Assests/JS/editorials/jquery.scrolly.min.js"></script>
-    <script src="Assests/JS/editorials/browser.min.js"></script>
-    <script src="Assests/JS/editorials/breakpoints.min.js"></script>
-    <script src="Assests/JS/editorials/util.js"></script>
-    <script src="Assests/JS/editorials/main.js"></script>
+    <script src="Assests\JS\hamburger.js"></script>
 </body>
 </html>
